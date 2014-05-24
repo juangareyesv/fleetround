@@ -1,0 +1,19 @@
+extends layout
+
+block js
+	script
+		var users = !{JSON.stringify(users)};
+
+block main
+	div(id="map")
+	a(id="manager", href="#") Coorp
+	form
+		a(id="close", href="#close") x
+		label Plese, Login user twitter
+		input(type="text", id="username", value="@")
+		input(type="submit",value="Start")
+		
+		
+		
+
+	
